@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 1407, in script
+    play music "audio/Music MP3/Crowdust_Day.mp3" volume 0.5 fadein loop
+  File "renpy/common/000statements.rpy", line 125, in execute_play_music
+    fadein=eval(p["fadein"]),
+  File "game/script.rpy", line 1407, in <module>
+    play music "audio/Music MP3/Crowdust_Day.mp3" volume 0.5 fadein loop
+NameError: name 'loop' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 1407, in script
+    play music "audio/Music MP3/Crowdust_Day.mp3" volume 0.5 fadein loop
+  File "C:\Users\yingy\Downloads\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "C:\Users\yingy\Downloads\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\yingy\Downloads\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 125, in execute_play_music
+    fadein=eval(p["fadein"]),
+  File "C:\Users\yingy\Downloads\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\yingy\Downloads\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 1407, in <module>
+    play music "audio/Music MP3/Crowdust_Day.mp3" volume 0.5 fadein loop
+NameError: name 'loop' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.0.23051307
+Crowdust 1.1
+Fri Jun 30 15:16:29 2023
